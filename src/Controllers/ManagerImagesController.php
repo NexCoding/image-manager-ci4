@@ -1,7 +1,7 @@
 <?php namespace NexCoding\ImageManagerCi4\Controllers;
 
 use App\Controllers\BaseController;
-class ImageController extends BaseController
+class ManagerImagesController extends BaseController
 {
     public function upload()
     {
