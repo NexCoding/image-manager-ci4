@@ -1,0 +1,15 @@
+{
+    "name": "nexcoding/image-manager-ci4",
+    "autoload": {
+        "psr-4": {
+            "NexCoding\\ImageManagerCi4\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abdellah Elkadiri",
+            "email": "abdellah.elkadiri.dev@gmail.com"
+        }
+    ],
+    "require": {}
+}
