@@ -4,23 +4,20 @@ declare(strict_types=1);
 
 namespace NexCoding\ImageManagerCi4\Config;
 
-use App\Config\Services as BaseService;
-
+use Config\Services as BaseService;
+use \NexCoding\ImageManagerCi4\ImageManager;
 class Services extends BaseService
 {
     /**
      * The base auth class
      */
-    public static function image_manager_ci4(bool $getShared = true): Auth
+    public static function image_manager_ci4(bool $getShared = true)
     {
         if ($getShared) {
-            return self::getSharedInstance('ImageManagerCi4');
+            return self::getSharedInstance('image_manager_ci4');
         }
 
-        return new ImageManagerCi4();
+        return new ImageManager();
     }
-
-    //service('image_manager_ci4')->routes($routes);
-
 
 }

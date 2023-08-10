@@ -6,11 +6,11 @@ namespace NexCoding\ImageManagerCi4;
 
 use CodeIgniter\Router\RouteCollection;
 
-class ImageManagerCi4 {
+class ImageManager {
 
     public function routes(RouteCollection &$routes, array $config = []): void
     {
-        $authRoutes = config('AuthRoutes')->routes;
+        $authRoutes = config('ImageManagerRoutes')->routes;
 
         $routes->group('/', ['namespace' => 'NexCoding\ImageManagerCi4\Controllers'], static function (RouteCollection $routes) use ($authRoutes, $config): void {
             foreach ($authRoutes as $name => $row) {

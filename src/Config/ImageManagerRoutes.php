@@ -1,20 +1,12 @@
 <?php
 
-// $routes = Services::routes();
-
-// $routes->group('manager-images', ['namespace' => 'NexCoding\ImageManagerCi4\Controllers'], function($routes) {
-//     $routes->get('/', 'ManagerImagesController::index');
-//     $routes->post('/upload', 'ManagerImagesController::upload');
-// });
-
-
 declare(strict_types=1);
 
 namespace NexCoding\ImageManagerCi4\Config;
 
 use CodeIgniter\Config\BaseConfig;
 
-class Routes extends BaseConfig
+class ImageManagerRoutes extends BaseConfig
 {
     public array $routes = [
         'manager-images' => [
