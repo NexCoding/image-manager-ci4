@@ -17,9 +17,24 @@ class ImageManagerRoutes extends BaseConfig
                 'list-images', // Route name
             ],
             [
+                'get',
+                'select_one',
+                'ManagerImagesController::selectOne',
+            ],
+            [
+                'get',
+                'select_multi',
+                'ManagerImagesController::selectMulti',
+            ],
+            [
                 'post',
                 'upload',
                 'ManagerImagesController::upload',
+            ],
+            [
+                'get',
+                'ajax_media/(:num)',
+                'ManagerImagesController::ajax_media/$1',
             ],
         ],
         
